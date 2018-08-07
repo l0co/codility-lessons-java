@@ -1,11 +1,6 @@
 package e01.binaryGap;
 
-// you can also use imports, for example:
-// import java.util.*;
-
-// you can write to stdout for debugging purposes, e.g.
-// System.out.println("this is a debug message");
-
+// https://app.codility.com/demo/results/trainingKYJGEG-FZ5/
 class Solution {
 
 	public int solution(int N) {

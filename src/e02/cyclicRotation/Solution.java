@@ -2,11 +2,11 @@ package e02.cyclicRotation;
 
 import java.util.Arrays;
 
+// https://app.codility.com/demo/results/training35H66K-6QS/
 public class Solution {
 
 	public int[] solution(int[] a, int k) {
 
-		// fix to extreme_empty
 		if (a.length<1)
 			return a;
 

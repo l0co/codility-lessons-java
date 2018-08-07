@@ -1,5 +1,6 @@
 package e03.frogJmp;
 
+// https://app.codility.com/demo/results/training468FTP-GKC/
 public class Solution {
 
 	public int solution(int x, int y, int d) {
