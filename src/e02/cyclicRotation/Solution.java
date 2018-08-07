@@ -2,9 +2,6 @@ package e02.cyclicRotation;
 
 import java.util.Arrays;
 
-/**
- * @author lukasz.frankowski@gmail.com
- */
 public class Solution {
 
 	public int[] solution(int[] a, int k) {
