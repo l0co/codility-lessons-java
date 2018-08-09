@@ -85,12 +85,43 @@ public class Solution {
 		return counters;
 	}
 
+	/**********************************************************************************************************
+	 * Replace solution1 array.fill with new array, too much complexity, but better than 1 & 2
+	 * https://app.codility.com/demo/results/training5G9GC5-9W9/
+	 **********************************************************************************************************/
+
+	public int[] solution3(int n, int[] a) {
+		int[] counters = new int[n];
+		int max = 0, total = 0;
+
+		for (int op: a) {
+			if (op>=1 && op<=n) {
+				counters[op-1]++;
+				max = Math.max(counters[op-1], max);
+			} else if (op==n+1) {
+				total = total+max;
+				max = 0;
+				counters = new int[n];
+			} else
+				throw new IllegalArgumentException(String.format("Value: %d out of range: %d", op, n+1));
+
+		}
+
+		// add max to tail counters
+		for (int i=0; i<counters.length; i++)
+			counters[i] += total;
+
+		return counters;
+	}
+
+
 	public static void main(String [] args) {
 //		int[] test = new int[] {3, 4, 4, 6, 1, 4, 4};
 		int[] test = new int[] {1, 6, 3, 3, 6, 4, 4, 2, 6, 4, 4, 6, 1, 4, 4};
 
 		System.out.println(Arrays.toString(new Solution().solution1(5, test)));
 		System.out.println(Arrays.toString(new Solution().solution2(5, test)));
+		System.out.println(Arrays.toString(new Solution().solution3(5, test)));
 	}
 
 }
