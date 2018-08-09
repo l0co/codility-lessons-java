@@ -1,11 +1,6 @@
 package e02.oddOccurrencesInArray;
 
-// you can also use imports, for example:
-// import java.util.*;
-
-// you can write to stdout for debugging purposes, e.g.
-// System.out.println("this is a debug message");
-
+// https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/
 public class SolutionNotMy {
 
 	public int solution(int[] A) {

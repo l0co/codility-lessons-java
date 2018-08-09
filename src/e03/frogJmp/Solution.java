@@ -1,5 +1,6 @@
 package e03.frogJmp;
 
+// https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/
 // https://app.codility.com/demo/results/training468FTP-GKC/
 public class Solution {
 

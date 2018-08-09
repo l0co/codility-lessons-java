@@ -1,5 +1,6 @@
 package e03.tapeEquilibrium;
 
+// https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/
 // https://app.codility.com/demo/results/trainingGJG7EA-6NU/
 public class Solution {
 

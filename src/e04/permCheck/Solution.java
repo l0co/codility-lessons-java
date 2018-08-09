@@ -1,5 +1,6 @@
 package e04.permCheck;
 
+// https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/
 // https://app.codility.com/demo/results/trainingNGBENQ-ER3/
 public class Solution {
 
