@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 // https://app.codility.com/programmers/lessons/4-counting_elements/max_counters/
+@SuppressWarnings("Duplicates")
 public class Solution {
 
 	/**********************************************************************************************************
@@ -114,6 +115,33 @@ public class Solution {
 		return counters;
 	}
 
+	/**********************************************************************************************************
+	 * Uses no array re-creation (a perfect solution)
+	 * https://app.codility.com/demo/results/trainingD5TAZW-NMY/
+	 **********************************************************************************************************/
+
+	public int[] solution4(int n, int[] a) {
+		int[] counters = new int[n];
+		int max = 0, total = 0;
+
+		for (int op: a) {
+			if (op>=1 && op<=n) {
+				counters[op-1] = Math.max(total, counters[op-1]) + 1;
+				max = Math.max(counters[op-1], max);
+			} else if (op==n+1) {
+				total = max;
+			} else
+				throw new IllegalArgumentException(String.format("Value: %d out of range: %d", op, n+1));
+
+		}
+
+		// cleanup
+		for (int i=0; i<counters.length; i++)
+			counters[i] = Math.max(counters[i], total);
+
+		return counters;
+	}
+
 
 	public static void main(String [] args) {
 //		int[] test = new int[] {3, 4, 4, 6, 1, 4, 4};
@@ -122,6 +150,7 @@ public class Solution {
 		System.out.println(Arrays.toString(new Solution().solution1(5, test)));
 		System.out.println(Arrays.toString(new Solution().solution2(5, test)));
 		System.out.println(Arrays.toString(new Solution().solution3(5, test)));
+		System.out.println(Arrays.toString(new Solution().solution4(5, test)));
 	}
 
 }
