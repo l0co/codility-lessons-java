@@ -17,7 +17,7 @@ public class MinAvgTwoSlice {
 			int localMinAvgIdx = 0;
 			for (int i=0; i<=a.length-step; i++) {
 				double sum = 0;
-				for (int j=0; j<step; j++)
+				for (int j=0; j<step; j++) // TODO this can be optimized using prefix sums, but anyway scores 100%
 					sum += a[i+j];
 				double avg = sum / step;
 				if (avg<localMinAvg) {
