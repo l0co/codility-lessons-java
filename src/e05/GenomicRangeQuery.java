@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 // https://app.codility.com/programmers/lessons/5-prefix_sums/genomic_range_query/
-// the most naive solution is 62% because of performance
+// the most naive solution is 62% because of performance, Detected time complexity: O(N * M)
 // https://app.codility.com/demo/results/training49P7D8-A4Z/
 public class GenomicRangeQuery {
 
