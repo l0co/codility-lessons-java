@@ -1,8 +1,8 @@
-package e04.missingInteger;
+package e04;
 
 // https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/
 // https://app.codility.com/demo/results/trainingNFW285-8RT/
-public class Solution {
+public class MissingInteger {
 
 	public int solution(int[] a) {
 		int occurrences[] = new int[a.length];
@@ -21,10 +21,10 @@ public class Solution {
 	}
 
 	public static void main(String [] args) {
-		System.out.println(new Solution().solution(new int[] {1, 3, 6, 4, 1, 2}));
-		System.out.println(new Solution().solution(new int[] {1, 2, 3}));
-		System.out.println(new Solution().solution(new int[] {-1, -3}));
-		System.out.println(new Solution().solution(new int[] {1, 3, 6, 4, 1, 2, 100000}));
+		System.out.println(new MissingInteger().solution(new int[] {1, 3, 6, 4, 1, 2}));
+		System.out.println(new MissingInteger().solution(new int[] {1, 2, 3}));
+		System.out.println(new MissingInteger().solution(new int[] {-1, -3}));
+		System.out.println(new MissingInteger().solution(new int[] {1, 3, 6, 4, 1, 2, 100000}));
 	}
 
 }

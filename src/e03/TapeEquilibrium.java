@@ -1,8 +1,8 @@
-package e03.tapeEquilibrium;
+package e03;
 
 // https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/
 // https://app.codility.com/demo/results/trainingGJG7EA-6NU/
-public class Solution {
+public class TapeEquilibrium {
 
 	public int solution(int[] a) {
 		int total = 0, left = 0, diff = Integer.MAX_VALUE;
@@ -17,8 +17,8 @@ public class Solution {
 	}
 
 	public static void main(String [] args) {
-		System.out.println(new Solution().solution(new int[] {3, 1, 2, 4, 3}));
-		System.out.println(new Solution().solution(new int[] {3, 1}));
+		System.out.println(new TapeEquilibrium().solution(new int[] {3, 1, 2, 4, 3}));
+		System.out.println(new TapeEquilibrium().solution(new int[] {3, 1}));
 	}
 
 }

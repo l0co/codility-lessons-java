@@ -1,4 +1,4 @@
-package e04.maxCounters;
+package e04;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -6,7 +6,7 @@ import java.util.Map;
 
 // https://app.codility.com/programmers/lessons/4-counting_elements/max_counters/
 @SuppressWarnings("Duplicates")
-public class Solution {
+public class MaxCounters {
 
 	/**********************************************************************************************************
 	 * Too much time complexity
@@ -147,10 +147,10 @@ public class Solution {
 //		int[] test = new int[] {3, 4, 4, 6, 1, 4, 4};
 		int[] test = new int[] {1, 6, 3, 3, 6, 4, 4, 2, 6, 4, 4, 6, 1, 4, 4};
 
-		System.out.println(Arrays.toString(new Solution().solution1(5, test)));
-		System.out.println(Arrays.toString(new Solution().solution2(5, test)));
-		System.out.println(Arrays.toString(new Solution().solution3(5, test)));
-		System.out.println(Arrays.toString(new Solution().solution4(5, test)));
+		System.out.println(Arrays.toString(new MaxCounters().solution1(5, test)));
+		System.out.println(Arrays.toString(new MaxCounters().solution2(5, test)));
+		System.out.println(Arrays.toString(new MaxCounters().solution3(5, test)));
+		System.out.println(Arrays.toString(new MaxCounters().solution4(5, test)));
 	}
 
 }

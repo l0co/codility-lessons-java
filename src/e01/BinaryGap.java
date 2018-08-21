@@ -1,8 +1,8 @@
-package e01.binaryGap;
+package e01;
 
 // https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
 // https://app.codility.com/demo/results/trainingKYJGEG-FZ5/
-class Solution {
+class BinaryGap {
 
 	public int solution(int N) {
 		int result = -1;
@@ -26,10 +26,10 @@ class Solution {
 
 
 	public static void main(String [] args) {
-		System.out.println(new Solution().solution(1041));
-		System.out.println(new Solution().solution(529));
-		System.out.println(new Solution().solution(15));
-		System.out.println(new Solution().solution(619649849));
+		System.out.println(new BinaryGap().solution(1041));
+		System.out.println(new BinaryGap().solution(529));
+		System.out.println(new BinaryGap().solution(15));
+		System.out.println(new BinaryGap().solution(619649849));
 	}
 
 }

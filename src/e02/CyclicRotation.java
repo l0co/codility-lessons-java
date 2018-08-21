@@ -1,10 +1,10 @@
-package e02.cyclicRotation;
+package e02;
 
 import java.util.Arrays;
 
 // https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/
 // https://app.codility.com/demo/results/training35H66K-6QS/
-public class Solution {
+public class CyclicRotation {
 
 	public int[] solution(int[] a, int k) {
 
@@ -23,7 +23,7 @@ public class Solution {
 	}
 
 	public static void main(String [] args) {
-		System.out.println(Arrays.toString(new Solution().solution(new int[]{3, 8, 9, 7, 6}, 3)));;
+		System.out.println(Arrays.toString(new CyclicRotation().solution(new int[]{3, 8, 9, 7, 6}, 3)));;
 	}
 
 }

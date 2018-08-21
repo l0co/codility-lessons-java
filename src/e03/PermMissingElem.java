@@ -1,8 +1,8 @@
-package e03.permMissingElem;
+package e03;
 
 // https://app.codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/
 // https://app.codility.com/demo/results/trainingRZMA2V-397/
-public class Solution {
+public class PermMissingElem {
 
 	public int solution(int[] a) {
 		int i = 0;
@@ -31,11 +31,11 @@ public class Solution {
 	}
 
 	public static void main(String [] args) {
-		System.out.println(new Solution().solution(new int[] {2, 3, 1, 5}));
-		System.out.println(new Solution().solution(new int[] {1, 2, 3, 5}));
-		System.out.println(new Solution().solution(new int[] {5, 3, 2, 1}));
-		System.out.println(new Solution().solution(new int[] {4, 3, 2, 1}));
-		System.out.println(new Solution().solution(new int[] {6, 3, 2, 1, 4, 7}));
+		System.out.println(new PermMissingElem().solution(new int[] {2, 3, 1, 5}));
+		System.out.println(new PermMissingElem().solution(new int[] {1, 2, 3, 5}));
+		System.out.println(new PermMissingElem().solution(new int[] {5, 3, 2, 1}));
+		System.out.println(new PermMissingElem().solution(new int[] {4, 3, 2, 1}));
+		System.out.println(new PermMissingElem().solution(new int[] {6, 3, 2, 1, 4, 7}));
 	}
 
 }

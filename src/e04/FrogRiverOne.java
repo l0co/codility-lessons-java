@@ -1,8 +1,8 @@
-package e04.frogRiverOne;
+package e04;
 
 // https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/
 // https://app.codility.com/demo/results/trainingPSH3EB-SXQ/
-public class Solution {
+public class FrogRiverOne {
 
 	public int solution(int len, int[] times) {
 		int positions[] = new int[len];
@@ -25,7 +25,7 @@ public class Solution {
 	}
 
 	public static void main(String [] args) {
-		System.out.println(new Solution().solution(5, new int[] {1, 3, 1, 4, 2, 3, 5, 4}));
+		System.out.println(new FrogRiverOne().solution(5, new int[] {1, 3, 1, 4, 2, 3, 5, 4}));
 	}
 
 }

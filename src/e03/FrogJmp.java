@@ -1,8 +1,8 @@
-package e03.frogJmp;
+package e03;
 
 // https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/
 // https://app.codility.com/demo/results/training468FTP-GKC/
-public class Solution {
+public class FrogJmp {
 
 	public int solution(int x, int y, int d) {
 		if (d==0 || y<x)
@@ -12,7 +12,7 @@ public class Solution {
 	}
 
 	public static void main(String [] args) {
-		System.out.println(new Solution().solution(10, 85, 30));
+		System.out.println(new FrogJmp().solution(10, 85, 30));
 	}
 
 }
