@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 // https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
-// wrong answer 40%
+// wrong answer 40% (this is a wrong assumption that minimal value will always be involved into minimal average - consider [2, 2, 9, 1, 9])
 // https://app.codility.com/demo/results/trainingC89822-GGG/
 public class MinAvgTwoSlice {
 
