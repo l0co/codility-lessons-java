@@ -1,45 +1,57 @@
 package e05;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 // https://app.codility.com/programmers/lessons/5-prefix_sums/genomic_range_query/
-// the most naive solution is 62% because of performance, Detected time complexity: O(N * M)
-// https://app.codility.com/demo/results/training49P7D8-A4Z/
+// partial sums for separate impacts; detected time complexity: O(N + M)
+// https://app.codility.com/demo/results/training62S6DH-97H/
 public class GenomicRangeQuery {
 
-	public static final Map<Character, Integer> MAP = new HashMap<Character, Integer>() {{
-		put('A', 1);
-		put('C', 2);
-		put('G', 3);
-		put('T', 4);
-	}};
-
-	protected int[] impacts(String s) {
-		int[] impacts = new int[s.length()];
-		for (int i=0; i<s.length(); i++)
-			impacts[i] = MAP.get(s.charAt(i));
-		return impacts;
-	}
-
-	protected int calcMin(int[] impacts, int leftInclusive, int rightInclusive) {
-		int min = 4;
-		for (int i=leftInclusive; i<=rightInclusive; i++) {
-			min = Math.min(min, impacts[i]);
-			if (min==1)
-				break;
-		}
-
-		return min;
+	protected boolean exists(int[] sum, int leftInclusive, int rightInclusive) {
+		if (leftInclusive==0 && sum[0]>0)
+			return true;
+		if (leftInclusive>0 && sum[leftInclusive] > sum[leftInclusive-1])
+			return true;
+		return sum[rightInclusive] > sum[leftInclusive];
 	}
 
 	public int[] solution(String s, int[] p, int[] q) {
-		int[] impacts = impacts(s);
+		int[] sum1 = new int[s.length()], sum2 = new int[s.length()], sum3 = new int[s.length()];
+		int osum1 = 0, osum2 = 0, osum3 = 0;
+
+		for (int i=0; i<s.length(); i++) {
+			switch (s.charAt(i)) {
+				case 'A':
+					osum1++;
+					break;
+				case 'C':
+					osum2++;
+					break;
+				case 'G':
+					osum3++;
+					break;
+				case 'T':
+					break;
+				default:
+					throw new IllegalArgumentException();
+			}
+			sum1[i] = osum1;
+			sum2[i] = osum2;
+			sum3[i] = osum3;
+		}
+
 		int[] results = new int[p.length];
 
-		for (int i=0; i<p.length; i++)
-			results[i] = calcMin(impacts, p[i], q[i]);
+		for (int i=0; i<p.length; i++) {
+			if (exists(sum1, p[i], q[i]))
+				results[i] = 1;
+			else if (exists(sum2, p[i], q[i]))
+				results[i] = 2;
+			else if (exists(sum3, p[i], q[i]))
+				results[i] = 3;
+			else
+				results[i] = 4;
+		}
 
 		return results;
 	}
