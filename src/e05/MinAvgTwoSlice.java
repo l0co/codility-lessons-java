@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 // https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
+// wrong answer 40%
+// https://app.codility.com/demo/results/trainingC89822-GGG/
 public class MinAvgTwoSlice {
 
 	public int solution(int[] a) {
@@ -27,11 +29,11 @@ public class MinAvgTwoSlice {
 		// for each minimal value find the minimal average going left and right
 		for (int i: minValIdx)
 			if (i>0) {
-				double leftAvg = (double) (a[i] + a[i-1]) / 2;
-				int left = i-1;
+				double leftAvg = a[i];
+				int left = i;
 				while (--left > 0) {
-					double localLeftAvg = (double) (leftAvg + a[left]) / 2;
-					if (localLeftAvg<leftAvg) {
+					double localLeftAvg = (leftAvg + a[left]) / 2;
+					if (localLeftAvg<leftAvg || left==i-1) {
 						leftAvg = localLeftAvg;
 						if (leftAvg<minAvg) {
 							minAvg = leftAvg;
@@ -45,15 +47,16 @@ public class MinAvgTwoSlice {
 
 		for (int i: minValIdx)
 			if (i<a.length-1) {
-				double rightAvg = (double) (a[i] + a[i+1]) / 2;
-				int right = i+1;
-				while (++right < a.length-1) {
-					double localRightAvg = (double) (rightAvg + a[right]) / 2;
-					if (localRightAvg<rightAvg) {
+				double rightAvg = a[i];
+				int right = i;
+				while (++right < a.length) {
+					double localRightAvg = (rightAvg + a[right]) / 2;
+					if (localRightAvg<rightAvg || right==i+1) {
 						rightAvg = localRightAvg;
 						if (rightAvg<minAvg) {
 							minAvg = rightAvg;
-							minAvgIdx = right;
+							minAvgIdx = i;
+							break;
 						}
 					} else {
 						break;
@@ -65,9 +68,9 @@ public class MinAvgTwoSlice {
 	}
 
 	public static void main(String [] args) {
-//		System.out.println(new MinAvgTwoSlice().solution(new int[] {4, 2, 2, 5, 1, 5, 8}));
-//		System.out.println(new MinAvgTwoSlice().solution(new int[] {-3, -5, -8, -4, -10}));
-		System.out.println(new MinAvgTwoSlice().solution(new int[] {-3, -5, -8, -4, -10, -9}));
+		System.out.println(new MinAvgTwoSlice().solution(new int[] {4, 2, 2, 5, 1, 5, 8})); // 1->2 (1)
+		System.out.println(new MinAvgTwoSlice().solution(new int[] {-3, -5, -8, -4, -10})); // 2->4 (2)
+		System.out.println(new MinAvgTwoSlice().solution(new int[] {-3, -5, -8, -4, -10, -9})); // 4=>5 (4)
 	}
 
 }
