@@ -1,44 +1,18 @@
 package e06;
 
-import java.util.PriorityQueue;
+import java.util.Arrays;
 
 // https://app.codility.com/programmers/lessons/6-sorting/max_product_of_three/
-// 88% performance https://app.codility.com/demo/results/trainingQXNTF9-3BV/
+// https://app.codility.com/demo/results/training48QPU6-DYH/
 public class MaxProductOfThree {
 
 	public int solution(int[] a) {
-		PriorityQueue<Integer> biggest = new PriorityQueue<>(3);
-		PriorityQueue<Integer> negative = new PriorityQueue<>(2, (i, j) -> -Integer.compare(i, j));
+		Arrays.sort(a);
 
-		for (int i: a) {
-			biggest.add(i);
-			if (biggest.size()>3)
-				biggest.poll();
-			if (i<0) {
-				negative.add(i);
-				if (negative.size()>2)
-					negative.poll();
-			}
+		int p1 = a[a.length-1] * a[a.length-2] * a[a.length-3];
+		int p2 = a[a.length-1] * a[0] * a[1]; // two the least negative check
 
-		}
-
-		int product = 1;
-		int max = -1;
-		while (!biggest.isEmpty()) {
-			max = biggest.poll();
-			product *= max;
-		}
-
-		// check negatives
-		if (negative.size()==2 && max>-1) {
-			int negativeProduct = 1;
-			while (!negative.isEmpty())
-				negativeProduct *= negative.poll();
-			if (negativeProduct * max > product)
-				product = negativeProduct * max;
-		}
-
-		return product;
+		return p1>p2 ? p1 : p2;
 	}
 
 	public static void main(String [] args) {
