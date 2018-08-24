@@ -1,7 +1,7 @@
 package e07;
 
 // https://app.codility.com/programmers/lessons/7-stacks_and_queues/nesting/
-// 75% (wrong answer) https://app.codility.com/demo/results/trainingU3R8HQ-8F9/
+// https://app.codility.com/demo/results/trainingXZKVV2-CSG/
 public class Nesting {
 
 	public int solution(String s) {
@@ -15,12 +15,13 @@ public class Nesting {
 				return 0;
 		}
 
-		return 1;
+		return opens==0 ? 1 : 0;
 	}
 
 	public static void main(String [] args) {
-		System.out.println(new Nesting().solution("(()(())())"));
-		System.out.println(new Nesting().solution("())"));
+		System.out.println(new Nesting().solution("(()(())())")); // 1
+		System.out.println(new Nesting().solution("())")); // 0
+		System.out.println(new Nesting().solution("()(()()(((()())(()()))")); // 0
 	}
 
 }
