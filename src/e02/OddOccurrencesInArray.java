@@ -1,7 +1,8 @@
 package e02;
 
 // https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/
-public class OddOccurrencesInArray_NotMy {
+// https://app.codility.com/demo/results/trainingDQS3EA-6U9/
+public class OddOccurrencesInArray {
 
 	public int solution(int[] A) {
 		// write your code in Java SE 8
@@ -14,7 +15,7 @@ public class OddOccurrencesInArray_NotMy {
 	}
 
 	public static void main(String [] args) {
-		System.out.println(new OddOccurrencesInArray_NotMy().solution(new int[] { 9, 3, 9, 3, 9, 7, 9 }));
+		System.out.println(new OddOccurrencesInArray().solution(new int[] { 9, 3, 9, 3, 9, 7, 9 }));
 	}
 
 }
