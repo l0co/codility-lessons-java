@@ -1,4 +1,4 @@
-package e06;
+package e06.ex;
 
 import java.util.Arrays;
 
