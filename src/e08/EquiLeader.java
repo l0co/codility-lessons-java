@@ -5,7 +5,9 @@ package e08;
 @SuppressWarnings("Duplicates")
 public class EquiLeader {
 
-	// we use the same solution as in Dominator to find the global leader
+	/**
+	 * We use the same solution as in {@link Dominator} to find the global leader.
+ 	 */
 	protected static class SameValueStack {
 
 		protected Integer value = null;
