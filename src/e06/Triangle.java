@@ -2,8 +2,13 @@ package e06;
 
 import java.util.Arrays;
 
-// https://app.codility.com/programmers/lessons/6-sorting/triangle/
-// 93% (wrong answer) https://app.codility.com/demo/results/trainingC7CKNP-N4C/
+/**
+ * Task: https://app.codility.com/programmers/lessons/6-sorting/triangle/
+ * Solution: https://app.codility.com/demo/results/trainingC7CKNP-N4C/
+ * Result: 93% - wrong answer, but no data given to reproduce (probably boundary 2,147,483,647++)
+ *
+ * @author Lukasz Frankowski
+ */
 public class Triangle {
 
 	public int solution(int[] arr) {

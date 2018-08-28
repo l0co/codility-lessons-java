@@ -2,8 +2,13 @@ package e07;
 
 import java.util.Stack;
 
-// https://app.codility.com/programmers/lessons/7-stacks_and_queues/fish/
-// https://app.codility.com/demo/results/trainingXUBTFW-Y7N/
+/**
+ * Task: https://app.codility.com/programmers/lessons/7-stacks_and_queues/fish/
+ * Solution: https://app.codility.com/demo/results/trainingXUBTFW-Y7N/
+ * Result: 100%
+ *
+ * @author Lukasz Frankowski
+ */
 public class Fish {
 
 	public int solution(int[] sizes, int[] directions) {

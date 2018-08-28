@@ -1,7 +1,12 @@
 package e03;
 
-// https://app.codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/
-// https://app.codility.com/demo/results/trainingRZMA2V-397/
+/**
+ * Task: https://app.codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/
+ * Solution: https://app.codility.com/demo/results/trainingRZMA2V-397/
+ * Result: 100%
+ *
+ * @author Lukasz Frankowski
+ */
 public class PermMissingElem {
 
 	public int solution(int[] a) {

@@ -3,8 +3,13 @@ package e06;
 import java.util.HashSet;
 import java.util.Set;
 
-// https://app.codility.com/programmers/lessons/6-sorting/distinct/
-// https://app.codility.com/demo/results/trainingG7MQRJ-S4S/
+/**
+ * Task: https://app.codility.com/programmers/lessons/6-sorting/distinct/
+ * Solution: https://app.codility.com/demo/results/trainingG7MQRJ-S4S/
+ * Result: 100%
+ *
+ * @author Lukasz Frankowski
+ */
 public class Distinct {
 
 	public int solution(int[] a) {

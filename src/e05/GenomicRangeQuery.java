@@ -2,9 +2,13 @@ package e05;
 
 import java.util.Arrays;
 
-// https://app.codility.com/programmers/lessons/5-prefix_sums/genomic_range_query/
-// partial sums for separate impacts; detected time complexity: O(N + M)
-// https://app.codility.com/demo/results/training62S6DH-97H/
+/**
+ * Task: https://app.codility.com/programmers/lessons/5-prefix_sums/genomic_range_query/
+ * Solution: https://app.codility.com/demo/results/training62S6DH-97H/
+ * Result: 100%
+ *
+ * @author Lukasz Frankowski
+ */
 public class GenomicRangeQuery {
 
 	protected boolean exists(int[] sum, int leftInclusive, int rightInclusive) {

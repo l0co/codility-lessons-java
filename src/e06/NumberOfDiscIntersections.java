@@ -1,7 +1,12 @@
 package e06;
 
-// https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_intersections/
-// 93% exception https://app.codility.com/demo/results/training4VW8F4-65M/
+/**
+ * Task: https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_intersections/
+ * Solution: https://app.codility.com/demo/results/training4VW8F4-65M/
+ * Result: 93% - some exception, but no data given to reproduce it
+ *
+ * @author Lukasz Frankowski
+ */
 public class NumberOfDiscIntersections {
 
 	public int solution(int[] a) {

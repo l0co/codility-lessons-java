@@ -1,7 +1,12 @@
 package e08;
 
-// https://app.codility.com/programmers/lessons/8-leader/equi_leader/
-// https://app.codility.com/demo/results/trainingX7F589-BEW/
+/**
+ * Task: https://app.codility.com/programmers/lessons/8-leader/equi_leader/
+ * Solution: https://app.codility.com/demo/results/trainingX7F589-BEW/
+ * Result: 100%
+ *
+ * @author Lukasz Frankowski
+ */
 @SuppressWarnings("Duplicates")
 public class EquiLeader {
 

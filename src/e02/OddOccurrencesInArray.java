@@ -1,7 +1,12 @@
 package e02;
 
-// https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/
-// https://app.codility.com/demo/results/trainingDQS3EA-6U9/
+/**
+ * Task: https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/
+ * Solution: https://app.codility.com/demo/results/trainingDQS3EA-6U9/
+ * Result: 100%
+ *
+ * @author Lukasz Frankowski
+ */
 public class OddOccurrencesInArray {
 
 	public int solution(int[] A) {

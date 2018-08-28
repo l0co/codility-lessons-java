@@ -1,7 +1,12 @@
 package e03;
 
-// https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/
-// https://app.codility.com/demo/results/trainingGJG7EA-6NU/
+/**
+ * Task: https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/
+ * Solution: https://app.codility.com/demo/results/trainingGJG7EA-6NU/
+ * Result: 100%
+ *
+ * @author Lukasz Frankowski
+ */
 public class TapeEquilibrium {
 
 	public int solution(int[] a) {

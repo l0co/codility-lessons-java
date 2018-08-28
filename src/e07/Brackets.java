@@ -4,8 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-// https://app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/
-// https://app.codility.com/demo/results/trainingD26SHV-3Z2/
+/**
+ * Task: https://app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/
+ * Solution: https://app.codility.com/demo/results/trainingD26SHV-3Z2/
+ * Result: 100%
+ *
+ * @author Lukasz Frankowski
+ */
 public class Brackets {
 
 	protected static final Map<Character, BracketDef> BRACKETS = new HashMap<>();

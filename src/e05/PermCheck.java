@@ -1,7 +1,12 @@
 package e05;
 
-// https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/
-// https://app.codility.com/demo/results/trainingNGBENQ-ER3/
+/**
+ * Task: https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/
+ * Solution: https://app.codility.com/demo/results/trainingNGBENQ-ER3/
+ * Result: 100%
+ *
+ * @author Lukasz Frankowski
+ */
 public class PermCheck {
 
 	public int solution(int[] a) {

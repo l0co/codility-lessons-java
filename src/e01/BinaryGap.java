@@ -1,7 +1,12 @@
 package e01;
 
-// https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
-// https://app.codility.com/demo/results/trainingKYJGEG-FZ5/
+/**
+ * Task: https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
+ * Solution: https://app.codility.com/demo/results/trainingKYJGEG-FZ5/
+ * Result: 100%
+ *
+ * @author Lukasz Frankowski
+ */
 class BinaryGap {
 
 	public int solution(int N) {

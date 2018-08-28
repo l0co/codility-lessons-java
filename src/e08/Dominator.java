@@ -1,7 +1,12 @@
 package e08;
 
-// https://app.codility.com/programmers/lessons/8-leader/dominator/
-// https://app.codility.com/demo/results/training4AX98N-ZN7/
+/**
+ * Task: https://app.codility.com/programmers/lessons/8-leader/dominator/
+ * Solution: https://app.codility.com/demo/results/training4AX98N-ZN7/
+ * Result: 100%
+ *
+ * @author Lukasz Frankowski
+ */
 public class Dominator {
 
 	protected static class SameValueStack {

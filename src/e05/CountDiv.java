@@ -1,7 +1,12 @@
 package e05;
 
-// https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/
-// https://app.codility.com/demo/results/trainingB8XTH2-3RZ/
+/**
+ * Task: https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/
+ * Solution: https://app.codility.com/demo/results/trainingB8XTH2-3RZ/
+ * Result: 100%
+ *
+ * @author Lukasz Frankowski
+ */
 public class CountDiv {
 
 	public int solution(int a, int b, int k) {

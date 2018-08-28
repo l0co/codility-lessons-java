@@ -1,7 +1,12 @@
 package e04;
 
-// https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/
-// https://app.codility.com/demo/results/trainingNFW285-8RT/
+/**
+ * Task: https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/
+ * Solution: https://app.codility.com/demo/results/trainingNFW285-8RT/
+ * Result: 100%
+ *
+ * @author Lukasz Frankowski
+ */
 public class MissingInteger {
 
 	public int solution(int[] a) {

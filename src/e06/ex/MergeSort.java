@@ -2,7 +2,11 @@ package e06.ex;
 
 import java.util.Arrays;
 
-// example of merge sort
+/**
+ * Example of merge sort
+ *
+ * @author Lukasz Frankowski
+ */
 public class MergeSort {
 
 	public int[] solution(int[] a) {

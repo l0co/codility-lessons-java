@@ -2,8 +2,13 @@ package e07;
 
 import java.util.Stack;
 
-// https://app.codility.com/programmers/lessons/7-stacks_and_queues/stone_wall/
-// https://app.codility.com/demo/results/trainingG8GDDJ-TZH/
+/**
+ * Task: https://app.codility.com/programmers/lessons/7-stacks_and_queues/stone_wall/
+ * Solution: https://app.codility.com/demo/results/trainingG8GDDJ-TZH/
+ * Result: 100%
+ *
+ * @author Lukasz Frankowski
+ */
 public class StoneWall {
 
 	protected int totalHeight;

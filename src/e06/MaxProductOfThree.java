@@ -2,8 +2,13 @@ package e06;
 
 import java.util.Arrays;
 
-// https://app.codility.com/programmers/lessons/6-sorting/max_product_of_three/
-// https://app.codility.com/demo/results/training48QPU6-DYH/
+/**
+ * Task: https://app.codility.com/programmers/lessons/6-sorting/max_product_of_three/
+ * Solution: https://app.codility.com/demo/results/training48QPU6-DYH/
+ * Result: 100%
+ *
+ * @author Lukasz Frankowski
+ */
 public class MaxProductOfThree {
 
 	public int solution(int[] a) {

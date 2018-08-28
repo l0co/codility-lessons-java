@@ -1,9 +1,15 @@
 package e05;
 
-// https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
-// this solution is a bit tricy, we calculate min avg for pairs, then we calculate min avg for tripples, if tripples has lesser avg then
-// pairs, we then calculate min for fours and check again agains tripples; if tripples doesn't have lesser avg, pairs are winning
-// https://app.codility.com/demo/results/trainingWGU5MN-K7W/
+/**
+ * Task: https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
+ * Solution: https://app.codility.com/demo/results/trainingWGU5MN-K7W/
+ * Result: 100%
+ *
+ * this solution is a bit tricky, we calculate min avg for pairs, then we calculate min avg for tripples, if tripples has lesser avg then
+ * pairs, we then calculate min for fours and check again agains tripples; if tripples doesn't have lesser avg, pairs are winning
+ *
+ * @author Lukasz Frankowski
+ */
 public class MinAvgTwoSlice {
 
 	public int solution(int[] a) {

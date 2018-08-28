@@ -1,7 +1,12 @@
 package e07;
 
-// https://app.codility.com/programmers/lessons/7-stacks_and_queues/nesting/
-// https://app.codility.com/demo/results/trainingXZKVV2-CSG/
+/**
+ * Task: https://app.codility.com/programmers/lessons/7-stacks_and_queues/nesting/
+ * Solution: https://app.codility.com/demo/results/trainingXZKVV2-CSG/
+ * Result: 100%
+ *
+ * @author Lukasz Frankowski
+ */
 public class Nesting {
 
 	public int solution(String s) {

@@ -2,7 +2,11 @@ package e06.ex;
 
 import java.util.Arrays;
 
-// example of counting sort
+/**
+ * Example of counting sort
+ *
+ * @author Lukasz Frankowski
+ */
 public class CountingSort {
 
 	public int[] solution(int max, int[] a) {

@@ -2,8 +2,13 @@ package e02;
 
 import java.util.Arrays;
 
-// https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/
-// https://app.codility.com/demo/results/training35H66K-6QS/
+/**
+ * Task: https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/
+ * Solution: https://app.codility.com/demo/results/training35H66K-6QS/
+ * Result: 100%
+ *
+ * @author Lukasz Frankowski
+ */
 public class CyclicRotation {
 
 	public int[] solution(int[] a, int k) {
