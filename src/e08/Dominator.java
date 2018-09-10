@@ -7,6 +7,7 @@ package e08;
  *
  * @author Lukasz Frankowski
  */
+@SuppressWarnings("Duplicates")
 public class Dominator {
 
 	protected static class SameValueStack {
