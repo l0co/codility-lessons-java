@@ -19,7 +19,7 @@ public class MaxSliceSum {
 		for (int i=0; i<a.length; i++) {
 			maxEnding = Math.max(0, maxEnding + a[i]);
 			maxSlice = Math.max(maxSlice, maxEnding);
-			if (highestNegative<=0)
+			if (a[i]<=0)
 				highestNegative = Math.max(a[i], highestNegative);
 		}
 

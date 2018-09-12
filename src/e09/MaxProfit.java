@@ -1,4 +1,4 @@
-package e09.ex;
+package e09;
 
 /**
  * Task: https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_profit/
