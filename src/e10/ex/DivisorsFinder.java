@@ -42,8 +42,6 @@ public class DivisorsFinder {
 	}
 
 	public boolean isPrime(int number) {
-		Divisors divisors = new Divisors();
-
 		int i = 2;
 		while (i*i <= number) {
 			if (number % i == 0)
