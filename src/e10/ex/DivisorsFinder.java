@@ -4,17 +4,27 @@ import java.util.Set;
 import java.util.TreeSet;
 
 /**
+ * Counting number of divisors and primality test from https://codility.com/media/train/8-PrimeNumbers.pdf
+ *
  * @author Lukasz Frankowski
  */
 public class DivisorsFinder {
 
 	public class Divisors {
-		int count = 0;
-		Set<Integer> divisors = new TreeSet<>();
+		protected int count = 0;
+		protected Set<Integer> divisors = new TreeSet<>();
 
 		public void addDivisor(int i) {
 			count++;
 			divisors.add(i);
+		}
+
+		public int getCount() {
+			return count;
+		}
+
+		public Set<Integer> getDivisors() {
+			return divisors;
 		}
 
 		@Override
@@ -33,7 +43,8 @@ public class DivisorsFinder {
 		while (i*i <= number) {
 			if (number % i == 0) {
 				divisors.addDivisor(i);
-				divisors.addDivisor(number/i);
+				if (number/i != i)
+					divisors.addDivisor(number/i);
 			}
 			i++;
 		}
